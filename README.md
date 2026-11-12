@@ -35,4 +35,4 @@ This notebook explores:
 - The calculation of allele and genotype frequencies.
 - The establishment of Hardy–Weinberg proportions through random mating.
 
-Note: The project is in progress and will extend these basic models by introducing additional evolutionary mechanisms, including mutations, selection...
+_Note: The project is in progress and will extend these basic models by introducing additional evolutionary mechanisms, including mutations, selection..._

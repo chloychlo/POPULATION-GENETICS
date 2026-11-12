@@ -1,26 +1,38 @@
-# Population Genetics Simulation
+# Population Genetics Simulations
 
-## Project Overview 
+This repository contains a collection of Python notebooks exploring evolutionary processes through mathematical and stochastic simulations.
 
-This project implements a stochastic simulator to investigate fundamental mechanisms of molecular evolution and population genetics. 
+The project aims to connect theoretical population genetics with computational experiments: starting from classical models, examining their assumptions and mathematical properties, and progressively building more complex simulations of evolutionary dynamics.
 
-The primary goal is to bridge theoretical derivations from population genetics lectures with computational experiments across replicated populations, verifying statistical predictions regarding allele frequency dynamics, genetic diversity, and fixation probabilities.
 
-### Model Assumptions
-* **Population Structure**: $N$ haploid (or diploids), asexually (or sexually) reproducing individuals with discrete, non-overlapping generations.
-* **Genome Architecture**: Each individual carries a genome of $L$ diallelic loci (states `0` or `1`).
-* **Fitness Landscape**: Additive fitness across loci, where allele `0` confers a selective advantage of $0$ and allele `1` confers $s_i$ at locus $i$ ($W = \sum_{i=1}^L g_i s_i$).
-* **Evolutionary Forces**: Genetic drift, natural selection, mutation, and linkage/recombination (introduced progressively across the notebooks).
+## Notebooks
 
----
+### 1. Genetic Drift at a Biallelic Locus
 
-## Repository Architecture
+**Wright–Fisher model · One locus · Two alleles**
 
-```text
-.
-├── notebooks/
-│   ├── 01_genetic_drift.ipynb      # Core simulator & neutral genetic drift
-│   ├── 02_selection.ipynb          # Single-locus selection & fixation probability
-│   └── 03_advanced_topic.ipynb     # Multi-locus evolutionary extensions
-├── requirements.txt                # Python package dependencies
-└── README.md                       # Project documentation
+This notebook explores:
+- The stochastic trajectories of allele frequencies.
+- The probability of fixation or loss of an allele.
+- The influence of initial allele frequency and population size.
+- The distribution and expected timescale of absorption (fixation or loss).
+
+
+### 2. Genetic Drift in a Multi-Allelic Population
+
+**Wright–Fisher model · One locus · Multiple alleles**
+
+This notebook explores:
+- The evolution of allele frequencies across generations.
+- The loss of genetic diversity through genetic drift.
+- The relationship between population size and the timescale of diversity loss.
+
+### 3. The Hardy–Weinberg Principle
+
+**Diploid population · One locus · Two alleles**
+
+This notebook explores:
+- The calculation of allele and genotype frequencies.
+- The establishment of Hardy–Weinberg proportions through random mating.
+
+Note: The project is in progress and will extend these basic models by introducing additional evolutionary mechanisms, including mutations, selection...
